@@ -15,8 +15,8 @@ namespace Electronic.Api.Services
         IEnumerable<ProductDTO> GetTopAddedProducts();
         IEnumerable<AllProductsSellerDTO> GetProductsByUserId(string Id);
         bool EditActiveProduct(User_ProductDTO Data, int status);
-        bool UpdateProductApprove(int prod, bool fapprove);
-        public IEnumerable<ProductsGetALLDTO> GellAllProductNeedReview();
+        bool UpdateProductApprove(int prod, int fapprove);
+        //public IEnumerable<ProductsGetALLDTO> GellAllProductNeedReview();
 
     }
 }

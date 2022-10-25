@@ -116,7 +116,7 @@ namespace Electronic.Api.Services
                 foreach (var ord in ords)
                 {
                     var user = await userManager.FindByIdAsync(ord.UserID);
-                    var dev = await userManager.FindByIdAsync(ord.DeliveryId);
+                   // var dev = await userManager.FindByIdAsync(ord.DeliveryId);
                     OrderDTO order = new OrderDTO();
 
                     order.Id = ord.Id;
@@ -130,7 +130,7 @@ namespace Electronic.Api.Services
                     order.img = "https://localhost:7096/img/Users/" + user.Img;
                     order.Address = ord.Address;
                     order.State = ord.State;
-                    order.DeliveryName = dev.UserName;
+                   order.DeliveryName = context.Users.Where(p=>p.Id==ord.DeliveryId).Select(s=>s.UserName).FirstOrDefault();
                     OrdDTOs.Add(order);
                 }
                 return OrdDTOs.OrderByDescending(e => e.Create_Date);
@@ -152,7 +152,7 @@ namespace Electronic.Api.Services
                 {
 
                     OrderDTO order = new OrderDTO();
-
+                    order.DeliveryName = context.Users.Where(p => p.Id == ord.DeliveryId).Select(s => s.UserName).FirstOrDefault();
                     order.Id = ord.Id;
                     order.Total_Price = ord.TotalPrice;
                     order.Create_Date = ord.CreateDate;

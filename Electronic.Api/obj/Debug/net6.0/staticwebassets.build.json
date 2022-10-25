@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/QVK9UCwM/W+JmdjryfMViB2VkVD/6FzGeWIaQrGB5Y=",
+  "Hash": "CzXsbVGTJGFljLwOqFhiPdzfSkYBwcTunOOMlLGhPk4=",
   "Source": "Electronic.Api",
   "BasePath": "_content/Electronic.Api",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Products\\037f482f-de11-4807-b642-9eb3d886fa74_K1.png"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\0a827105-04e8-4cd4-b819-3b151d8aa7c6_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/0a827105-04e8-4cd4-b819-3b151d8aa7c6_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\0a827105-04e8-4cd4-b819-3b151d8aa7c6_5817152.png"
     },
     {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\0dc153f8-ebdf-4725-bed7-3ef6d92d51b3_3.jpg",
@@ -357,6 +374,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Products\\2b2d0c0e-8cc2-437d-998b-f7f8fd6902b0_C1.png"
     },
     {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\2cde435d-893a-4006-b08a-2b62d139b5f7_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/2cde435d-893a-4006-b08a-2b62d139b5f7_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\2cde435d-893a-4006-b08a-2b62d139b5f7_5817152.png"
+    },
+    {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\2f3d2d40-0aab-4642-8695-ae6af3b1d068_C1.png",
       "SourceId": "Electronic.Api",
       "SourceType": "Discovered",
@@ -440,6 +474,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Products\\37ebc575-fda2-45e4-9183-1067be441399_8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\3a4484db-b949-41ff-bb7c-de57106d192e_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/3a4484db-b949-41ff-bb7c-de57106d192e_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\3a4484db-b949-41ff-bb7c-de57106d192e_5817152.png"
     },
     {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\3d715166-7c60-465f-b01c-5e5900a4597a_Capture.PNG",
@@ -627,6 +678,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Products\\4ed434e3-800c-44c3-b918-55986538dbe9_2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\4fb3b3c8-599c-4fb2-af1e-fb7a27cd79e1_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/4fb3b3c8-599c-4fb2-af1e-fb7a27cd79e1_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\4fb3b3c8-599c-4fb2-af1e-fb7a27cd79e1_5817152.png"
     },
     {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\52fbb4f3-b4b2-4950-bc4e-a540f7d554ec_4888226.jpg",
@@ -1292,6 +1360,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Products\\941d7de4-2110-4b24-b720-994ced306ec5_11.jpg"
     },
     {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\946e33cd-1d0d-435b-b8c5-c343de0e49db_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/946e33cd-1d0d-435b-b8c5-c343de0e49db_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\946e33cd-1d0d-435b-b8c5-c343de0e49db_5817152.png"
+    },
+    {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\94853434-8259-4488-b584-f3c9029dbefd_4.jpg",
       "SourceId": "Electronic.Api",
       "SourceType": "Discovered",
@@ -1375,6 +1460,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Products\\979be201-0608-42fa-877d-071ec8ceb4ed_2b2d0c0e-8cc2-437d-998b-f7f8fd6902b0_C1.png"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\97c36d9b-e1e9-44a9-bb9e-121789a77101_478.jpg",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/97c36d9b-e1e9-44a9-bb9e-121789a77101_478.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\97c36d9b-e1e9-44a9-bb9e-121789a77101_478.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\9b680d4f-83ad-4ff4-9488-548b7a9c7783_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/9b680d4f-83ad-4ff4-9488-548b7a9c7783_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\9b680d4f-83ad-4ff4-9488-548b7a9c7783_5817152.png"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\9d14a86e-c681-4d2f-b0b6-bdd39e26422f_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/9d14a86e-c681-4d2f-b0b6-bdd39e26422f_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\9d14a86e-c681-4d2f-b0b6-bdd39e26422f_5817152.png"
     },
     {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\9e93315b-d99d-4e6d-b793-28d245d5a508_7.jpg",
@@ -1513,6 +1649,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Products\\ac03485e-888b-4d0a-b560-bbdc83ca8ff0_2.jpg"
     },
     {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\aeaf8a5a-bc0c-4a07-9be6-e3ada28a7987_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/aeaf8a5a-bc0c-4a07-9be6-e3ada28a7987_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\aeaf8a5a-bc0c-4a07-9be6-e3ada28a7987_5817152.png"
+    },
+    {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\b14af5c4-8320-4b0b-b024-aad53f2c24d6_2.jpg",
       "SourceId": "Electronic.Api",
       "SourceType": "Discovered",
@@ -1579,6 +1732,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Products\\b3a02915-5652-4e58-8257-180aa8413cf3_4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\b5509879-e240-4651-9c7a-75f9792f80c6_478.jpg",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/b5509879-e240-4651-9c7a-75f9792f80c6_478.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\b5509879-e240-4651-9c7a-75f9792f80c6_478.jpg"
     },
     {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\bbef903e-70f0-4d9c-9dc6-1b44024935e3_6.jpg",
@@ -2157,6 +2327,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Products\\e3be01a9-8d12-4c5f-adfe-e327c2cec61c_4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\e64f0d32-a548-49c1-bf91-d05454bff93e_5817152.png",
+      "SourceId": "Electronic.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\",
+      "BasePath": "_content/Electronic.Api",
+      "RelativePath": "img/Products/e64f0d32-a548-49c1-bf91-d05454bff93e_5817152.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Products\\e64f0d32-a548-49c1-bf91-d05454bff93e_5817152.png"
     },
     {
       "Identity": "C:\\Users\\carlo\\OneDrive\\Desktop\\New folder\\Api\\Electronic.Api\\wwwroot\\img\\Products\\e8778af9-58d1-46a8-aa38-ca1177ecbd6a_12.jpg",

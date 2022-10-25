@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.Configuration;
 using Electronic.Api.DTO;
+using Electronic.Api.Dtos;
 using Electronic.Api.Model;
 using Electronic.Api.Model.user;
 using Electronic.Api.Repository;
@@ -12,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Runtime.Intrinsics.Arm;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -232,12 +234,35 @@ namespace Electronic.Api.Services
 
         public IEnumerable<ProductsGetALLDTO> GetAllProducts()
         {
-            var prods = product.GetAll();
+
+            List<ProductsGetALLDTO> productDTOs = new List<ProductsGetALLDTO>();
+            //var products = db.Products;
+            foreach (Product p in db.Products)
+            {
+                ProductsGetALLDTO productsGet = new ProductsGetALLDTO();
+
+                productsGet.Id = p.Id;
+                productsGet.price = p.price;
+                productsGet.name = p.name;
+                productsGet.userId = p.UserID;
+                productsGet.priceAfterDisc = p.price + (p.price * p.Discount / 100);
+                productsGet.img = "https://localhost:7096/Img/Products/" + p.img;
+                productsGet.Discount = p.Discount;
+                productsGet.SubCategoryName = subcategoryRepository.GetById(p.SubCategoryID).name;
+                productsGet.active = p.Active;
+                productDTOs.Add(productsGet);
+            }
+            return productDTOs;
+        }
+        public IEnumerable<ProductsGetALLDTO> GetAllProductsNeedReview()
+        {
+            var prods = product.GetAll().Where(j=>j.FirstAprove==0);
             List<ProductsGetALLDTO> AllProdDTOs = new List<ProductsGetALLDTO>();
             if (prods != null && prods.Count() > 0)
             {
                 foreach (Product prod in prods)
                 {
+
                     AllProdDTOs.Add(new ProductsGetALLDTO
                     {
                         Id = prod.Id,
@@ -255,8 +280,7 @@ namespace Electronic.Api.Services
             }
             return null;
         }
-
-        public bool UpdateProductApprove(int ProdId, bool firstApprove)
+        public bool UpdateProductApprove(int ProdId, int firstApprove)
         {
             var Prod = product.GetById(ProdId);
             if (Prod != null)
@@ -280,6 +304,29 @@ namespace Electronic.Api.Services
             }
             return false;
         }
+        //public IEnumerable<ProductsGetALLDTO> GetAllProducts()
+        //{
+        //    List<ProductsGetALLDTO> productDTOs = new List<ProductsGetALLDTO>();
+        //    var products = product.GetAllwhere(e => e.FirstAprove == 1 && e.Active == true);
+        //    foreach (Product p in products)
+        //    {
+
+        //        ProductsGetALLDTO productsGet = new ProductsGetALLDTO();
+
+        //        productsGet.Id = p.Id;
+        //        productsGet.price = p.price;
+        //        productsGet.name = p.name;
+        //        productsGet.priceAfterDisc = p.price + (p.price * p.Discount / 100);
+        //        productsGet.img = "https://localhost:7096/Img/Products/" + p.img;
+        //        productsGet.Discount = p.Discount;
+        //        productsGet.FirstAprove = p.FirstAprove;
+        //        productsGet.SubCategoryName = subcategoryRepository.GetById(p.SubCategoryID).name;
+
+        //        //productsGet.FavoriteProductID = (context.FvoriteProducts.Where(o => o.UserID == UserId).Select(u => u.ProductID == p.Id).FirstOrDefault() == true) ? (context.FvoriteProducts.Where(o => o.UserID == UserId && o.ProductID == p.Id).Select(u => u.iD).FirstOrDefault()) : -1;
+        //        productDTOs.Add(productsGet);
+        //    }
+        //    return productDTOs;
+        //}
 
 
 

@@ -159,20 +159,20 @@ namespace Electronic.Api.Controllers
         [HttpGet("GetAllProducts")]
         public IActionResult GetAllProducts()
         {
-            return Ok(prodservice.GetAllProducts());
+            return Ok(adminService.GetAllProducts());
         }
 
-        [HttpGet("GellAllProductNeedReview")]
-        public IActionResult GellAllProductNeedReview()
-        {
-            return Ok(prodservice.GellAllProductNeedReview());
-        }
+        //[HttpGet("GellAllProductNeedReview")]
+        //public IActionResult GellAllProductNeedReview()
+        //{
+        //    return Ok(prodservice.GellAllProductNeedReview());
+        //}
 
 
 
         [HttpGet]
         [Route("UpdateProductApprove/{ProductId}/{firstApprove}")]
-        public IActionResult UpdateProductApprove(int ProductId, bool firstApprove)
+        public IActionResult UpdateProductApprove(int ProductId, int firstApprove)
         {
             if (prodservice.UpdateProductApprove(ProductId, firstApprove))
             {
@@ -187,12 +187,22 @@ namespace Electronic.Api.Controllers
         [Route("RemoveProduct/{Id}")]
         public IActionResult Remove(int Id)
         {
+
             if (prodservice.RemoveProduct(Id))
                 return Ok("Product Removed Successfully");
             return BadRequest("No Product To Delete");
         }
 
+        [HttpGet]
 
+        [Route("GetAllProductsNeedReview")]
+        public IActionResult GetAllProductsNeedReview()
+        {
+            
+                return Ok((adminService.GetAllProductsNeedReview()));
+        }
+
+        
 
 
     }

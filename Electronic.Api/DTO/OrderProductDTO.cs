@@ -17,5 +17,7 @@ namespace Electronic.Api.DTO
 
         [Required]
         public int Product_ID { get; set; }
+        public string product_NAME { get; set; }
+
     }
 }

@@ -34,7 +34,7 @@ namespace Electronic.Api.Services
             List<ProductsGetALLDTO> Products = new List<ProductsGetALLDTO>();
             foreach (var item in sub)
             {
-                Products.AddRange(product2AddRepository.GetAll(e => e.SubCategoryID == item && e.Active == true && e.FirstAprove == true).Select(b => new ProductsGetALLDTO
+                Products.AddRange(product2AddRepository.GetAll(e => e.SubCategoryID == item && e.Active == true && e.FirstAprove == 1).Select(b => new ProductsGetALLDTO
                 {
                     //var FavoriteProduct = ;
 
@@ -61,7 +61,7 @@ namespace Electronic.Api.Services
             List<ProductsGetALLDTO> Products = new List<ProductsGetALLDTO>();
             foreach (var item in sub)
             {
-                Products.AddRange(product2AddRepository.GetAll(e => e.SubCategoryID == item && e.Active==true && e.FirstAprove==true).Select(b => new ProductsGetALLDTO
+                Products.AddRange(product2AddRepository.GetAll(e => e.SubCategoryID == item && e.Active==true && e.FirstAprove==1).Select(b => new ProductsGetALLDTO
                 {
 
                     Id = b.Id,
@@ -90,7 +90,7 @@ namespace Electronic.Api.Services
             List<ProductsGetALLDTO> Products = new List<ProductsGetALLDTO>();
             foreach (var item in sub)
             {
-                Products.AddRange(product2AddRepository.GetAll(e => e.SubCategoryID == item && e.Active == true && e.FirstAprove == true).Select(b => new ProductsGetALLDTO
+                Products.AddRange(product2AddRepository.GetAll(e => e.SubCategoryID == item && e.Active == true && e.FirstAprove == 1).Select(b => new ProductsGetALLDTO
                 {
 
                     Id = b.Id,
@@ -117,7 +117,7 @@ namespace Electronic.Api.Services
 
         public IEnumerable<ProductsGetALLDTO> GetAllProductsNew()
         {
-            return product2AddRepository.GetTopAdded().Select(b => new ProductsGetALLDTO
+            return product2AddRepository.GetTopAdded().Where(p=>p.FirstAprove==1&&p.Active==true).Select(b => new ProductsGetALLDTO
             {
 
                 Id = b.Id,
@@ -146,7 +146,7 @@ namespace Electronic.Api.Services
         {
 
 
-            return product2AddRepository.GetAll(e => e.SubCategoryID == id).Select(b => new ProductsGetALLDTO
+            return product2AddRepository.GetAll(e => e.SubCategoryID == id).Where(p => p.FirstAprove == 1 && p.Active == true).Select(b => new ProductsGetALLDTO
             {
 
                 Id = b.Id,
@@ -184,7 +184,7 @@ namespace Electronic.Api.Services
             List<ProductsGetALLDTO> Products = new List<ProductsGetALLDTO>();
             foreach (var item in sub)
             {
-                Products.AddRange(product2AddRepository.GetAll(e => e.SubCategoryID == item).Select(b => new ProductsGetALLDTO
+                Products.AddRange(product2AddRepository.GetAll(p => p.SubCategoryID == item&&p.FirstAprove == 1 && p.Active == true).Select(b => new ProductsGetALLDTO
                 {
 
                     Id = b.Id,

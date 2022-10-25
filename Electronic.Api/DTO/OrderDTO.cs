@@ -14,7 +14,7 @@ namespace Electronic.Api.DTO
         public DateTime OrderPlace_Date { get; set; } = new DateTime();
         public string? User_Id { get; set; }
         public int Count_Product { get; set; }
-        public string Satus { get; set; }
+        public string? Satus { get; set; }
 
         public string img { get; set; }
         public string Name { get; set; }

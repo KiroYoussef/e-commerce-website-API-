@@ -22,9 +22,9 @@ namespace Electronic.Api.Model
         [Required]
 
         public bool Active { get; set; }=true;
-        public bool AdminReview { get; set; } = true;
+        //public bool AdminReview { get; set; } = true;
 
-        public bool FirstAprove { get; set; } = false;
+        public int? FirstAprove { get; set; } 
         public long CountProduct { get; set; }
         public DateTime CreateDate { get; set; } = DateTime.Now;
         public virtual ICollection<FvoriteProduct> FvoriteProduct { get; set; }

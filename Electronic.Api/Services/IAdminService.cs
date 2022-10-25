@@ -17,7 +17,8 @@ namespace Electronic.Api.Services
         Task<bool> DeleteUsersAsync(List<string> model);
         Task<IEnumerable<UserRolesModel>> GetUserRoleAsync();
         Task<bool> EditUserRoleAsync(EditUserRoleModel model);
-
+        public IEnumerable<ProductsGetALLDTO> GetAllProductsNeedReview();
+        public IEnumerable<ProductsGetALLDTO> GetAllProducts();
 
 
 

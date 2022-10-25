@@ -16,7 +16,7 @@ namespace Electronic.Api.Repository.Custom_Repository
         }
         public IEnumerable<Product> GetProductsByUserId(string UserId)
         {
-            return _context.Products.Where(p => p.UserID == UserId);
+            return _context.Products.Where(p => p.UserID == UserId && p.FirstAprove==1 || p.FirstAprove==0).ToList();
         }
     }
 }

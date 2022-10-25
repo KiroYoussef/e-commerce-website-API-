@@ -40,9 +40,8 @@ namespace Electronic.Api.Services
             p.Description = productDTO.Description;
             p.ScreenSize = productDTO.ScreenSize;
             p.Discount = productDTO.Discount;
-            p.FirstAprove = false;
+            p.FirstAprove = 0;
             p.UserID = productDTO.UserID;
-            p.AdminReview = true;
             p.CountProduct = productDTO.CountProduct;
             p.SubCategoryID = productDTO.SubCategoryID;
             _productRepository.Insert(p);
@@ -52,7 +51,7 @@ namespace Electronic.Api.Services
         public IEnumerable<ProductsGetALLDTO> GetAllProducts(string UserId)
         {
             List<ProductsGetALLDTO> productDTOs = new List<ProductsGetALLDTO>();
-            var products = productRepository1.GetAll().Where(e => e.FirstAprove == true) ;
+            var products = productRepository1.GetAll().Where(e => e.FirstAprove == 1&&e.Active==true) ;
             foreach (Product p in products)
             {
                 var FavoriteProduct = context.FvoriteProducts.Where(o => o.UserID == UserId && o.ProductID == p.Id).Select(u => u.iD).FirstOrDefault();
@@ -74,10 +73,11 @@ namespace Electronic.Api.Services
             }
             return productDTOs;
         }
+
         public IEnumerable<ProductsGetALLDTO> GetAllProducts()
         {
             List<ProductsGetALLDTO> productDTOs = new List<ProductsGetALLDTO>();
-            var products = productRepository1.GetAllwhere(e => e.FirstAprove == false);
+            var products = productRepository1.GetAllwhere(e => e.FirstAprove == 1 && e.Active == true);
             foreach (Product p in products)
             {
 
@@ -144,7 +144,8 @@ namespace Electronic.Api.Services
                     Description = p.Description,
                     Discount = p.Discount,
                     CountProduct = p.CountProduct,
-                    Active = Convert.ToString(p.Active)
+                    Active = Convert.ToString(p.Active),
+
 
                 });
             }
@@ -153,7 +154,7 @@ namespace Electronic.Api.Services
 
         public IEnumerable<ProductDTO> GetTopAddedProducts()
         {
-            var products = _productRepository.GetTopAdded();
+            var products = _productRepository.GetTopAdded().Where(e => e.FirstAprove == 1 && e.Active == true);
             var ProdctDtos = new List<ProductDTO>();
             foreach (var p in products)
             {
@@ -181,13 +182,25 @@ namespace Electronic.Api.Services
 
         public bool RemoveProduct(int Id)
         {
-            var product = _productRepository.GetById(Id);
-            if (product != null)
+            try
             {
-                _productRepository.Delete(product);
-                return true;
+                var product = _productRepository.GetById(Id);
+                if (product != null)
+                {
+                    _productRepository.Delete(product);
+                    return true;
+                }
+                return false;
             }
-            return false;
+            catch 
+            {
+                var p = _productRepository.GetById(Id);
+                p.FirstAprove = -1;
+                _productRepository.Update(p);
+                return true;
+
+            }
+
         }
 
         public void UpdateProduct(ProductDTO productDTO)
@@ -215,8 +228,7 @@ namespace Electronic.Api.Services
             p.SubCategoryID = productDTO.SubCategoryID;
             p.UserID = productDTO.UserID;
             p.CountProduct = productDTO.CountProduct;
-            p.AdminReview = false;
-            p.FirstAprove = true;
+            p.FirstAprove = 0;
             _productRepository.Update(p);
 
 
@@ -251,7 +263,7 @@ namespace Electronic.Api.Services
 
 
         }
-        public bool UpdateProductApprove(int ProdId, bool firstApprove)
+        public bool UpdateProductApprove(int ProdId, int firstApprove)
         {
             var Prod = productRepository1.GetById(ProdId);
             if (Prod != null)
@@ -263,26 +275,26 @@ namespace Electronic.Api.Services
             return false;
         }
 
-        public IEnumerable<ProductsGetALLDTO> GellAllProductNeedReview()
-        {
-            List<ProductsGetALLDTO> productDTOs = new List<ProductsGetALLDTO>();
-            var productsNeedReview = productRepository1.GetAll().Where(e => e.AdminReview == false);
-            foreach (var product in productsNeedReview)
-            {
-                ProductsGetALLDTO OnlyProduct = new ProductsGetALLDTO();
-                OnlyProduct.Id = product.Id;
-                OnlyProduct.price = product.price;
-                OnlyProduct.name = product.name;
-                OnlyProduct.priceAfterDisc = product.price + (product.price * product.Discount / 100);
-                OnlyProduct.img = "https://localhost:7096/Img/Products/" + product.img;
-                OnlyProduct.Discount = product.Discount;
-                OnlyProduct.FirstAprove = product.FirstAprove;
-                OnlyProduct.SubCategoryName = subcategoryRepository.GetById(product.SubCategoryID).name;
-                productDTOs.Add(OnlyProduct);
+        //public IEnumerable<ProductsGetALLDTO> GellAllProductNeedReview()
+        //{
+        //    List<ProductsGetALLDTO> productDTOs = new List<ProductsGetALLDTO>();
+        //    var productsNeedReview = productRepository1.GetAll().Where(e => e.AdminReview == false);
+        //    foreach (var product in productsNeedReview)
+        //    {
+        //        ProductsGetALLDTO OnlyProduct = new ProductsGetALLDTO();
+        //        OnlyProduct.Id = product.Id;
+        //        OnlyProduct.price = product.price;
+        //        OnlyProduct.name = product.name;
+        //        OnlyProduct.priceAfterDisc = product.price + (product.price * product.Discount / 100);
+        //        OnlyProduct.img = "https://localhost:7096/Img/Products/" + product.img;
+        //        OnlyProduct.Discount = product.Discount;
+        //        OnlyProduct.FirstAprove = product.FirstAprove;
+        //        OnlyProduct.SubCategoryName = subcategoryRepository.GetById(product.SubCategoryID).name;
+        //        productDTOs.Add(OnlyProduct);
 
-            }
-            return productDTOs;
-        }
+        //    }
+        //    return productDTOs;
+        //}
 
     }
 }

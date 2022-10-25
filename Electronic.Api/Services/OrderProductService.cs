@@ -149,8 +149,8 @@ namespace Electronic.Api.Services
                         quantity = ordprod.Quantity,
                         Order_Approve = ordprod.OrderApprove,
                         Order_ID = ordprod.OrderID,
-                        Product_ID = ordprod.ProductID
-
+                        Product_ID = ordprod.ProductID,
+                        product_NAME = context.Products.FirstOrDefault(p => p.Id == ordprod.ProductID).name
                     });
                 }
                 return OrdProdDTOs;

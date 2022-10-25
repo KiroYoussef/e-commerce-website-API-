@@ -34,8 +34,8 @@ namespace Electronic.Api.Controllers
             return Ok(_service.GetAllProducts(UserId));
         }
         [HttpGet]
-        [Route("GetProductByUserId")]
-        public IActionResult GetProductByUserId(string? UserId)
+        [Route("GetProductByUserId/{UserId}")]
+        public IActionResult GetProductByUserId(string UserId)
         {
             return Ok(_service.GetProductsByUserId(UserId));
         }
@@ -95,7 +95,7 @@ namespace Electronic.Api.Controllers
 
         [HttpPut]
         [Route("UpdateProductApprove/{ProductId}/{approve}")]
-        public IActionResult UpdateProductApprove(int ProdId, bool firstApprove)
+        public IActionResult UpdateProductApprove(int ProdId, int firstApprove)
         {
             if (_service.UpdateProductApprove(ProdId, firstApprove))
             {

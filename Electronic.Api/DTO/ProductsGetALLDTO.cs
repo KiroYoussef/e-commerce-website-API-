@@ -8,7 +8,7 @@
         public float priceAfterDisc { get; set; }
         public float price { get; set; }
         public string img { get; set; }
-        public bool? FirstAprove { get; set; }
+        public int? FirstAprove { get; set; }
         public int IsFavorite { get; set; }
         public string SubCategoryName { get; set; }
         public string userId { get; set; }
